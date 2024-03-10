@@ -5,7 +5,7 @@
   Time: 0:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Title</title>
@@ -13,15 +13,23 @@
 <body>
 <a>New User Registration!</a>
 <form>
-    Username:<input type="txet" name="name"><br/>
-    Password:<input type="txet" name="password"><br/>
-    Email:<input type="text" name="email"><br/>
+    Username:<label>
+    <input name="name" type="text">
+</label><br/>
+    Password:<label>
+    <input name="password" type="text">
+</label><br/>
+    Email:<label>
+    <input type="text" name="email">
+</label><br/>
     <label for="gender">Select your gender:</label>
     <select name="gender" id="gender">
         <option value="male">Male</option>
         <option value="female">Female</option>
     </select>
-    Date of Birth:<input type="text" name="date of birth"><br/>
+    Date of Birth:<label>
+    <input type="text" name="date of birth">
+</label><br/>
     <input type="submit" value="Register"/>
 </form>
 </body>
