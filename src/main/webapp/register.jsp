@@ -12,12 +12,12 @@
 </head>
 <body>
 <a>New User Registration!</a>
-<form>
+<form method="post" action="register">
     Username:<label>
     <input name="name" type="text">
 </label><br/>
     Password:<label>
-    <input name="password" type="text">
+    <input name="password" type="password">
 </label><br/>
     Email:<label>
     <input type="text" name="email">
@@ -28,7 +28,7 @@
         <option value="female">Female</option>
     </select>
     Date of Birth:<label>
-    <input type="text" name="date of birth">
+    <input type="text" name="birthDate">
 </label><br/>
     <input type="submit" value="Register"/>
 </form>
