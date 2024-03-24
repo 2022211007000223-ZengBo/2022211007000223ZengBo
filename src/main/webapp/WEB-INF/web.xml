@@ -7,19 +7,37 @@
         <servlet-name>anyName</servlet-name>
         <servlet-class>com.ZengBo.week2.homework.idservlet</servlet-class>
     </servlet>
-    <servlet>
+    <!--<servlet>
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.ZengBo.week3.homework.RegisterServlet</servlet-class>
+
+    </servlet>-->
+    <servlet>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>com.ZengBo.week4.homework.ConfigDemoServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>ZengBo</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Id</param-name>
+            <param-value>2022211007000223</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>anyName</servlet-name>
         <url-pattern>/id</url-pattern>
     </servlet-mapping>
-
-    <servlet-mapping>
+    <!--<servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
-    </servlet-mapping>>
+    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
 
 
