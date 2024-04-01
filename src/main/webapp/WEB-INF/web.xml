@@ -24,6 +24,14 @@
             <param-value>2022211007000223</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.ZengBo.week5.homework.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>anyName</servlet-name>
         <url-pattern>/id</url-pattern>

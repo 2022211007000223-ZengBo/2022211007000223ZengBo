@@ -5,12 +5,8 @@
   Time: 0:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@include file="header.jsp"%>
+This is my register JSP page<br>
 <a>New User Registration!</a>
 <form method="post" action="register">
     Username:<label>
@@ -32,5 +28,5 @@
 </label><br/>
     <input type="submit" value="Register"/>
 </form>
-</body>
-</html>
+
+<%@include file="footer.jsp"%>
